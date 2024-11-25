@@ -1,0 +1,41 @@
+p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    }
+    
+
+   
+    body {
+        background-color: black;
+        color: white;  /* Text color will be white for visibility */
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100vh;  /* Ensure the background covers the full screen */
+    }
+
+    .rotate-image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,
+        -50%);
+        }
+
+        /* Make the image rotate */
+.rotate-image {
+    width: 650px; /* You can adjust the size of the image */
+    height: auto;
+    animation: rotate 5s linear infinite; /* Rotation animation */
+}
+
+/* Define the keyframe for rotation */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg); /* Start at 0 degrees */
+    }
+    100% {
+        transform: rotate(360deg); /* Rotate to 360 degrees (full rotation) */
+    }
+}
+
